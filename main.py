@@ -1,7 +1,7 @@
 import random
-import tok
 import discord
 from discord.ext import commands
+from bot_logic import gen_pass, gen_coin
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -20,35 +20,18 @@ async def hello(ctx):
     await ctx.send(f'Hello! Im live in Russia {bot.user}!')
 
 @bot.command()
-async def help(ctx):
+async def helpp(ctx):
     await ctx.send(f'Go to my telegram channel to learn more about the functions and commands of the bot')
 
 @bot.command()
 async def password(ctx):
-    await ctx.send(gen_pass)
+    await ctx.send(gen_pass())
+
+@bot.command()
+async def coin(ctx):
+    await ctx.send(gen_coin())
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-bot.run(tok.token)
+bot.run('MTE1MjkwODQyMzIzNTY0OTYwNw.G93C3V.5gAt4yY9GeL5tcrWXnO6ZoVBW_u6_oelBQOpO8')
