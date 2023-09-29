@@ -34,4 +34,4 @@ async def coin(ctx):
 
 
 
-bot.run('MTE1MjkwODQyMzIzNTY0OTYwNw.G93C3V.5gAt4yY9GeL5tcrWXnO6ZoVBW_u6_oelBQOpO8')
+bot.run('')
